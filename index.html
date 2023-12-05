@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="aku masih pemula">
+    <meta name="keywords" content="Belajar HTML">
+    <meta name="author" content="Edwin Darren Hasannudin">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+</head>
+<body style="background-color:aliceblue;">
+    <a href="resources/coba.html" target="_blank" title="Ayo buka ini" >link</a>
+    <hr>
+    <h1 style="color: red;">HEllO</h1>
+    <h2 style="color: rgb(8, 20, 232);">HEllO</h2>
+    <h3 style="color: #28f005;">HEllO</h3>
+    <h4>HEllO</h4>
+    <h5>HEllO</h5>
+    <h6>HEllO</h6>
+
+    <form action="action_page.php" method="post">
+        <div>
+            <label for="fname">first name :</label>
+            <input type="text" id="fname" name="fname" placeholder="Toy" required>
+        </div>
+        <br>
+        <div>
+            <label for="lname">last name :</label>
+            <input type="text" id="lname" name="lname" placeholder="Story" required>
+        </div>
+        <br>
+        <div>
+            <label for="pass">password :</label>
+            <input type="password" id="pass" name="pass" maxlength="12" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">email :</label>
+            <input type="email" id="email" name="email" placeholder="Disney@gmail.com" required>
+        </div>
+        <br>
+        <div>
+            <label for="phone">phone :</label>
+            <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890" required>
+        </div>
+        <br>
+        <div>
+            <label for="bdate">birthdate :</label>
+            <input type="date" id="bdate" name="bdate" required>
+        </div>
+        <br>
+        <div>
+            <label for="quantity">quantity :</label>
+            <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+        </div>
+        <br>
+        <div>
+            <label for="title">title :</label>
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." name="title" value="Mr.">
+
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" id="Mrs." name="title" value="Mrs.">
+
+            <label for="PhD.">PhD.</label>
+            <input type="radio" id="PhD." name="title" value="PhD.">
+        </div>
+        <br>
+        <div>
+            <label for="payment">payment :</label>
+            <select name="payment" id="payment">
+                <option value="visa">visa</option>
+                <option value="mastercard">mastercard</option>
+                <option value="giftcard">giftcard</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="subscribe">subscribe :</label>
+            <input type="checkbox" id="subscribe" name="subscribe>
+        </div>
+        <div>
+            <input type="reset">
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+
+    <br>
+    <button onclick="doSomething()" style="background-color: #333333;color: #00FF00;border-radius: 5px;">pencet dong</button>
+    <p id="test">Hello</p>
+    <script>
+        function doSomething(){
+            document.getElementById("test").innerHTML = "Goodbye"; 
+        }
+    </script>
+    
+    <p style="background-color: #222222; color: #28f005;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga error tenetur voluptas excepturi modi illum, ex voluptatum blanditiis sit nam. Veniam at architecto nesciunt eos dolorem eum sunt eius laboriosam.
+    Officiis blanditiis aliquid dicta recusandae animi quae natus perspiciatis laudantium? Dicta tempore assumenda magni voluptatem repellendus! Eius asperiores dignissimos, laborum, cumque, dolor eos voluptate molestias culpa at architecto repellendus quia.
+    Tenetur, ipsam nulla odit repudiandae quibusdam explicabo. Ducimus earum tempore nulla nostrum perspiciatis? Molestiae porro commodi officia nisi distinctio alias atque nulla iste doloremque saepe esse, sed labore magni rem!</p>
+    <b>Tebal</b>
+    <br>
+    <strong>strong</strong>
+    <i>italic</i>
+    <em>emphasized</em>
+    <del>coret</del>
+    <p>ini adalah <big>big</big> text </p>
+    <p>ini adalah <small>small</small> text </p>
+    <p>ini adalah <sub>subscript</sub> text </p>
+    <p>ini adalah <sup>superscript</sup> text </p>
+    <p>ini adalah <ins>inserted</ins> text </p>
+    <p>ini adalah <mark>marked</mark> text </p>
+    <a href="https://www.asus.com/laptops/for-home/all-series/" target="_blank">
+    <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg" alt="computer" height="300" width="500" title="Ini adalah laptop">
+    </a>
+    <h4>Unordered List</h4>
+    <ul>
+        <li>a</li>
+        <li>b</li>
+        <li>c
+            <ul>
+                <li>d</li>
+                <li>e</li>
+                <li>f</li>
+            </ul>
+        </li>
+    </ul>
+    <h4>Ordered List</h4>
+    <ol type="A">
+        <li>makan pagi</li>
+        <li>mandi pagi</li>
+        <li>bekerja</li>
+    </ol>
+    <h4>Description List</h4>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Ini adalah struktur untuk sebuah halaman web</dd>
+        <dt>CSS</dt>
+        <dd>Ini adalah style untuk sebuah halaman web</dd>
+        <dt>JavaScript</dt>
+        <dd>Ini adalah fungsi untuk sebuah halaman web</dd>
+    </dl>
+    <video controls width="500" height="300">
+        <source src="resources/Kenapa gw _KAYA_.mp4">
+    </video>
+    <h3>Jam Buka Toko</h3>
+    <table bgcolor="black" width="600">
+        <tr bgcolor="grey">
+            <th width="100">Minggu</th>
+            <th width="100">Senin</th>
+            <th width="100">Selasa</th>
+            <th width="100">Rabu</th>
+            <th width="100">Kamis</th>
+            <th width="100">Jumat</th>
+            <th width="100">Sabtu</th>
+        </tr>
+        <tr bgcolor="lightgrey" align="center">
+            <td>Tutup</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>Tutup</td>
+        </tr>
+    </table>
+
+    <h1>Hello!</h1>
+    <div style="background-color:cyan;">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero suscipit labore laborum nesciunt corrupti placeat ullam consectetur? Voluptas, reprehenderit placeat rerum laborum mollitia illo quae unde, vero numquam, assumenda consequatur.
+        Similique dolorum recusandae consequatur consequuntur odio voluptas saepe, ducimus magnam fugiat molestiae? Deserunt veritatis dicta vel corrupti deleniti temporibus reprehenderit quod voluptatum animi quas minus unde ullam, cum provident fuga.
+        Inventore rerum adipisci hic quae animi eligendi nobis consectetur unde amet facilis temporibus tenetur quibusdam fugiat possimus quaerat ipsa impedit sed consequatur veritatis laudantium natus, est itaque? Beatae, architecto voluptatem?
+    </p>
+    <p> 
+        <span style="color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> Nisi atque commodi, quidem est reprehenderit voluptate veniam architecto aliquid officiis autem ratione ex minus temporibus quam earum corrupti eaque facilis cupiditate?
+        Atque, recusandae. Consectetur, odit corporis vero perferendis quis repellendus unde pariatur distinctio doloremque in dolore beatae sequi veniam blanditiis at mollitia necessitatibus odio neque? Nulla molestias possimus odit ut ipsum.
+        Recusandae modi eos aliquid perspiciatis alias vitae sed necessitatibus, omnis odio esse labore repellat ut voluptas corrupti ea earum? Facilis dicta quia doloribus autem officia delectus earum iste similique minus?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia iusto numquam ex quidem rem nostrum voluptates praesentium vel quod. Nihil eveniet aspernatur repellat ipsam libero nobis nemo vitae odio architecto.
+    </p>
+    </div>
+
+    <iframe src="https://www.bing.com" width="650" height="620">
+
+    </iframe>
+</body>
+</html>
